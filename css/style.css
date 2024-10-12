@@ -220,7 +220,7 @@ p {
   background: #ffffff;
   width: 70%;
   height: auto;
-  min-height: 68px;
+  min-height: 78px;
 }
 .timeline .item-content::before {
   content: "";
@@ -237,11 +237,16 @@ p {
   font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  width: 90%;
+}
+.timeline .item-content .oneline {
+  line-height: 29px;
 }
 .timeline .item-content .place{
   font-family: 'Prata', sans-serif;
   font-size: 12px;
   letter-spacing: 3px;
+  width: 90%;
 }
 .timeline .timeline-line {
   border-width: 13px;
@@ -443,4 +448,10 @@ p {
 .goodbye img {
   width: 80%;
   height: auto;
+}
+
+@media screen and (min-width: 535px) {
+  .timeline .item-content .oneline {
+    line-height: 58px;
+  }
 }
